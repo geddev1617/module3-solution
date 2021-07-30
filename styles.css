@@ -7,3 +7,51 @@
 body {
   font-family: Montserrat, helvetics, sans-serif;
 }
+
+.nav-item a {
+  font-family: Verdana, serif;
+  text-transform: capitalize;
+}
+
+.heading-text {
+  font-family: roboto, serif;
+  font-size: 1.5625rem;
+  text-transform: capitalize;
+}
+
+.flex-item {
+  border: 1px solid;
+  position: relative;
+  background-color: #999999;
+}
+
+.flex-item + .flex-item {
+  margin-top: 8%;
+}
+
+.section-title {
+  font-family: Verdana, serif;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .flex-item:nth-of-type(1) {
+    margin-bottom: 3%;
+    width: 48%;
+  }
+  .flex-item:nth-of-type(2) {
+    margin-bottom: 3%;
+    width: 48%;
+  }
+
+  .flex-item + .flex-item {
+    margin-top: 0%;
+  }
+}
+
+@media (min-width: 768px) {
+  .flex-item + .flex-item {
+    margin-top: 0%;
+  }
+}
